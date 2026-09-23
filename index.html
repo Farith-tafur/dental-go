@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental GO - Odontología Preventiva y Restauradora</title>
+    <meta
+      name="description"
+      content="Dental GO - Centro Odontológico especializado en odontología preventiva y restauradora. Agenda tu cita: 990232032"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-contenido">
+          <!-- Logo con imagen -->
+          <a href="index.html" class="logo">
+            <img src="img/logo.jpg" alt="Dental GO Logo" class="logo-imagen" />
+            <div class="logo-texto">
+              <span class="logo-nombre"
+                >Dental<span class="destacado">GO</span></span
+              >
+              <span class="logo-slogan"
+                >Odontología Preventiva y Restauradora</span
+              >
+            </div>
+          </a>
+
+          <nav class="nav-principal" id="navPrincipal">
+            <ul class="nav-menu">
+              <li><a href="index.html" class="activo">Inicio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+
+          <div class="acciones-header">
+            <a
+              href="https://wa.me/51990232032"
+              target="_blank"
+              class="btn-cita"
+            >
+              <i class="fab fa-whatsapp"></i> Agendar Cita
+            </a>
+            <button class="btn-menu-mobile" id="btnMenuMobile">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-contenido">
+          <div class="hero-texto">
+            <h1 class="hero-titulo">
+              Tu Mejor <span class="texto-destacado">Sonrisa</span><br />
+              es Nuestra Pasión
+            </h1>
+            <p class="hero-descripcion">
+              Tratamiento dental de alto nivel profesional. Cuidamos de tu salud
+              dental con tecnología de vanguardia y un equipo humano
+              excepcional.
+            </p>
+
+            <div class="hero-botones">
+              <a
+                href="https://wa.me/51990232032"
+                target="_blank"
+                class="btn-primario"
+              >
+                <i class="fab fa-whatsapp"></i> Reservar Cita
+              </a>
+              <a href="servicios.html" class="btn-secundario">
+                <i class="fas fa-tooth"></i> Ver Servicios
+              </a>
+            </div>
+
+            <div class="hero-info">
+              <div class="hero-info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>990232032</strong>
+                  <span>Reservaciones</span>
+                </div>
+              </div>
+              <div class="hero-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Jr. Calvo de Araujo 2790</strong>
+                  <span>Iquitos, Perú</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IMAGEN DEL HERO - BANNER PRINCIPAL -->
+          <div class="hero-imagen">
+            <div class="hero-imagen-contenedor">
+              <div class="circulo-decorativo circulo-1"></div>
+              <div class="circulo-decorativo circulo-2"></div>
+              <img
+                src="img/baner-principal.jpg"
+                alt="Dental GO - Centro Odontológico"
+                class="hero-banner"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="beneficios">
+      <div class="container">
+        <div class="grid-beneficios">
+          <div class="beneficio-item">
+            <div class="beneficio-icono"><i class="fas fa-user-md"></i></div>
+            <h3>Profesionales Certificados</h3>
+            <p>
+              Equipo médico con años de experiencia y constante actualización
+            </p>
+          </div>
+          <div class="beneficio-item">
+            <div class="beneficio-icono"><i class="fas fa-microscope"></i></div>
+            <h3>Tecnología Moderna</h3>
+            <p>Equipos de última generación para diagnósticos precisos</p>
+          </div>
+          <div class="beneficio-item">
+            <div class="beneficio-icono"><i class="fas fa-heart"></i></div>
+            <h3>Atención Personalizada</h3>
+            <p>Cada paciente recibe un tratamiento único y adaptado</p>
+          </div>
+          <div class="beneficio-item">
+            <div class="beneficio-icono"><i class="fas fa-shield-alt"></i></div>
+            <h3>Bioseguridad Total</h3>
+            <p>Protocolos estrictos de higiene y seguridad</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+      <div class="container">
+        <div class="seccion-encabezado">
+          <h2>Tratamientos de Alto Nivel</h2>
+          <p>
+            Ofrecemos una amplia gama de servicios odontológicos para toda la
+            familia
+          </p>
+        </div>
+
+        <div class="grid-servicios">
+          <!-- Servicio 1 - CON IMAGEN -->
+          <div class="servicio-card">
+            <div class="servicio-imagen" style="background: none; padding: 0">
+              <img
+                src="img/carilla-porcelana.jpg"
+                alt="Carillas de Porcelana"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="servicio-info">
+              <h3>Carillas de Porcelana</h3>
+              <p>
+                Transforma tu sonrisa con carillas de alta estética y
+                durabilidad
+              </p>
+              <a href="https://wa.me/51990232032" class="servicio-link">
+                Consultar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Servicio 2 - CON IMAGEN (control-bracket) -->
+          <div class="servicio-card">
+            <div class="servicio-imagen" style="background: none; padding: 0">
+              <img
+                src="img/control-bracket.jpg"
+                alt="Ortodoncia"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="servicio-info">
+              <h3>Ortodoncia</h3>
+              <p>Alinea tus dientes con brackets tradicionales o estéticos</p>
+              <a href="https://wa.me/51990232032" class="servicio-link">
+                Consultar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Servicio 3 - SIN IMAGEN (se queda con icono) -->
+          <div class="servicio-card">
+            <div class="servicio-imagen">
+              <i class="fas fa-sparkles"></i>
+            </div>
+            <div class="servicio-info">
+              <h3>Blanqueamiento</h3>
+              <p>Recupera el brillo natural de tus dientes de forma segura</p>
+              <a href="https://wa.me/51990232032" class="servicio-link">
+                Consultar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Servicio 4 - CON IMAGEN (carillas-resina) -->
+          <div class="servicio-card">
+            <div class="servicio-imagen" style="background: none; padding: 0">
+              <img
+                src="img/carillas-resina.jpg"
+                alt="Resinas Estéticas"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="servicio-info">
+              <h3>Resinas Estéticas</h3>
+              <p>
+                Restauraciones invisibles que devuelven la belleza a tu sonrisa
+              </p>
+              <a href="https://wa.me/51990232032" class="servicio-link">
+                Consultar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Servicio 5 - SIN IMAGEN (se queda con icono) -->
+          <div class="servicio-card">
+            <div class="servicio-imagen">
+              <i class="fas fa-tooth"></i>
+            </div>
+            <div class="servicio-info">
+              <h3>Limpieza Dental</h3>
+              <p>Prevención y cuidado profundo para mantener tu salud bucal</p>
+              <a href="https://wa.me/51990232032" class="servicio-link">
+                Consultar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Servicio 6 - SIN IMAGEN (se queda con icono) -->
+          <div class="servicio-card">
+            <div class="servicio-imagen">
+              <i class="fas fa-child"></i>
+            </div>
+            <div class="servicio-info">
+              <h3>Odontopediatría</h3>
+              <p>Atención especializada y cariñosa para los más pequeños</p>
+              <a href="https://wa.me/51990232032" class="servicio-link">
+                Consultar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA CON IMÁGENES REALES -->
+    <section class="galeria">
+      <div class="container">
+        <div class="seccion-encabezado">
+          <h2>Transformaciones que Hablan</h2>
+          <p>Mira los resultados de nuestros tratamientos</p>
+        </div>
+
+        <div class="grid-galeria">
+          <div class="galeria-item">
+            <img src="img/paciente-1.jpg" alt="Caso 1" class="galeria-imagen" />
+            <div class="galeria-overlay">
+              <h4>Carillas de Porcelana</h4>
+              <p>Transformación completa</p>
+            </div>
+          </div>
+          <div class="galeria-item">
+            <img src="img/paciente-2.jpg" alt="Caso 2" class="galeria-imagen" />
+            <div class="galeria-overlay">
+              <h4>Diseño de Sonrisa</h4>
+              <p>Resultados naturales</p>
+            </div>
+          </div>
+          <div class="galeria-item">
+            <img src="img/paciente-3.jpg" alt="Caso 3" class="galeria-imagen" />
+            <div class="galeria-overlay">
+              <h4>Ortodoncia</h4>
+              <p>Alineación perfecta</p>
+            </div>
+          </div>
+          <div class="galeria-item">
+            <img src="img/paciente-4.jpg" alt="Caso 4" class="galeria-imagen" />
+            <div class="galeria-overlay">
+              <h4>Blanqueamiento</h4>
+              <p>Dientes más blancos</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="galeria-cta">
+          <a href="galeria.html" class="btn-primario">
+            Ver Galería Completa <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="container">
+        <div class="cta-contenido">
+          <div class="cta-texto">
+            <h2>¿Listo para transformar tu sonrisa?</h2>
+            <p>Agenda tu cita hoy mismo y comienza el cambio que mereces</p>
+          </div>
+          <div class="cta-botones">
+            <a
+              href="https://wa.me/51990232032"
+              target="_blank"
+              class="btn-blanco"
+            >
+              <i class="fab fa-whatsapp"></i> WhatsApp: 990232032
+            </a>
+            <a href="tel:990232032" class="btn-outline-blanco">
+              <i class="fas fa-phone"></i> Llamar Ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-footer">
+          <div class="footer-columna">
+            <div class="logo-footer">
+              <i class="fas fa-tooth"></i>
+              <span>Dental<span class="destacado">GO</span></span>
+            </div>
+            <p>
+              Odontología preventiva y restauradora de alto nivel profesional.
+              Tu sonrisa merece lo mejor.
+            </p>
+            <div class="redes-sociales">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="https://wa.me/51990232032"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-columna">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-columna">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="servicios.html">Carillas de Porcelana</a></li>
+              <li><a href="servicios.html">Ortodoncia</a></li>
+              <li><a href="servicios.html">Blanqueamiento</a></li>
+              <li><a href="servicios.html">Resinas Estéticas</a></li>
+              <li><a href="servicios.html">Limpieza Dental</a></li>
+            </ul>
+          </div>
+          <div class="footer-columna">
+            <h4>Contacto</h4>
+            <ul class="contacto-lista">
+              <li>
+                <i class="fas fa-map-marker-alt"></i
+                ><span>Jr. Calvo de Araujo 2790<br />Iquitos, Perú</span>
+              </li>
+              <li><i class="fas fa-phone"></i><span>990232032</span></li>
+              <li>
+                <i class="fas fa-clock"></i><span>Lun - Sáb: 9:00 - 20:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Dental GO - Centro Odontológico. Todos los derechos
+            reservados.
+          </p>
+          <p>CD. Gonzalo Cahuaza Rios</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
