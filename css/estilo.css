@@ -948,8 +948,10 @@ body {
 }
 
 /* ============================================ */
-/* RESPONSIVE */
+/* RESPONSIVE OPTIMIZADO PARA MÓVIL */
 /* ============================================ */
+
+/* TABLETS (hasta 1024px) */
 @media (max-width: 1024px) {
     .hero-titulo { font-size: 3rem; }
     .hero-contenido { grid-template-columns: 1fr; text-align: center; }
@@ -963,109 +965,303 @@ body {
     .nav-menu a { font-size: 0.9rem; }
 }
 
+/* MÓVILES GRANDES (hasta 768px) */
 @media (max-width: 768px) {
+    /* ====== HEADER MÓVIL ====== */
+    .header-contenido {
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    /* LOGO MÁS PEQUEÑO EN MÓVIL */
+    .logo-imagen {
+        height: 45px !important;
+        width: auto;
+    }
+
+    .logo-texto {
+        line-height: 1;
+    }
+
+    .logo-nombre {
+        font-size: 1.3rem !important;
+    }
+
+    /* OCULTAR EL SLOGAN EN MÓVIL (es ilegible) */
+    .logo-slogan {
+        display: none;
+    }
+
+    /* BOTÓN AGENDAR CITA MÁS PEQUEÑO */
+    .btn-cita {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+        gap: 5px;
+    }
+
+    .btn-cita i {
+        font-size: 0.9rem;
+    }
+
+    /* ====== MENÚ MÓVIL ====== */
     .nav-principal {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         background: var(--blanco);
-        padding: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        padding: 15px 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         display: none;
+        border-top: 1px solid var(--gris-medio);
     }
-    .nav-principal.abierto { display: block; }
-    .nav-menu { flex-direction: column; gap: 15px; align-items: flex-start; }
-    .btn-menu-mobile { display: block; }
-    .hero-titulo { font-size: 2.2rem; }
-    .hero-imagen { display: none; }
-    .grid-beneficios, .grid-servicios, .grid-galeria, .grid-footer {
-        grid-template-columns: 1fr;
-    }
-    .seccion-encabezado h2 { font-size: 2rem; }
-    .cta-contenido { flex-direction: column; text-align: center; }
-    .cta-texto h2 { font-size: 1.8rem; }
-    .pagina-hero h1 { font-size: 2.2rem; }
-}
 
-@media (max-width: 480px) {
-    .hero { padding: 110px 0 40px; }
-    .hero-titulo { font-size: 1.9rem; }
-    .btn-primario, .btn-secundario, .btn-blanco, .btn-outline-blanco {
+    .nav-principal.abierto {
+        display: block;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .nav-menu a {
+        font-size: 1rem;
+        padding: 10px 0;
+        width: 100%;
+        border-bottom: 1px solid var(--gris-claro);
+    }
+
+    .nav-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    .btn-menu-mobile {
+        display: block;
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+
+    /* ====== HERO MÓVIL ====== */
+    .hero {
+        padding: 90px 0 40px;
+        min-height: auto;
+    }
+
+    .hero-titulo {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .hero-descripcion {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    /* BOTONES DEL HERO MÁS COMPACTOS */
+    .hero-botones {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .btn-primario,
+    .btn-secundario {
         padding: 14px 25px;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         width: 100%;
         justify-content: center;
     }
-    .hero-botones, .cta-botones { flex-direction: column; width: 100%; }
+
+    /* INFO DE CONTACTO EN MÓVIL */
+    .hero-info {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .hero-info-item {
+        gap: 12px;
+    }
+
+    .hero-info-item i {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .hero-info-item strong {
+        font-size: 0.95rem;
+    }
+
+    /* OCULTAR IMAGEN DEL HERO EN MÓVIL */
+    .hero-imagen {
+        display: none;
+    }
+
+    /* ====== SECCIONES ====== */
+    .seccion-encabezado h2 {
+        font-size: 1.8rem;
+    }
+
+    .seccion-encabezado p {
+        font-size: 1rem;
+    }
+
+    /* ====== GRIDS A 1 COLUMNA ====== */
+    .grid-beneficios,
+    .grid-servicios,
+    .grid-galeria,
+    .grid-footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* ====== CTA FINAL ====== */
+    .cta-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .cta-texto h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-botones {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn-blanco,
+    .btn-outline-blanco {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 25px;
+        font-size: 0.95rem;
+    }
+
+    /* ====== PÁGINAS INTERNAS ====== */
+    .pagina-hero {
+        padding: 110px 0 50px;
+    }
+
+    .pagina-hero h1 {
+        font-size: 2rem;
+    }
+
+    .pagina-hero p {
+        font-size: 1rem;
+    }
+
+    .pagina-contenido {
+        padding: 50px 0;
+    }
+
+    /* ====== FOOTER ====== */
+    .footer {
+        padding: 40px 0 15px;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 0.85rem;
+    }
+
+    .logo-footer {
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .footer-columna {
+        text-align: center;
+    }
+
+    .footer-columna h4 {
+        font-size: 1.1rem;
+    }
+
+    .contacto-lista li {
+        justify-content: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
 }
 
-/* ============================================ */
-/* IMÁGENES - AGREGAR AL FINAL DEL CSS */
-/* ============================================ */
+/* MÓVILES PEQUEÑOS (hasta 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
 
-/* Logo con imagen */
-.logo-imagen {
-    height: 60px;
-    width: auto;
-    object-fit: contain;
-    border-radius: 10px;
-    transition: var(--transicion);
-}
+    .hero {
+        padding: 85px 0 35px;
+    }
 
-.logo:hover .logo-imagen {
-    transform: scale(1.05);
-}
+    .hero-titulo {
+        font-size: 1.75rem;
+    }
 
-/* Hero - Banner principal */
-.hero-banner {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 30px;
-    box-shadow: var(--sombra-fuerte);
-    position: relative;
-    z-index: 1;
-    object-fit: cover;
-    display: block;
-    transition: var(--transicion);
-}
+    .hero-descripcion {
+        font-size: 0.95rem;
+    }
 
-.hero-banner:hover {
-    transform: scale(1.02);
-}
+    /* LOGO AÚN MÁS PEQUEÑO */
+    .logo-imagen {
+        height: 40px !important;
+    }
 
-/* Servicios con imagen */
-.servicio-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: var(--transicion);
-}
+    .logo-nombre {
+        font-size: 1.15rem !important;
+    }
 
-.servicio-card:hover .servicio-imagen img {
-    transform: scale(1.1);
-}
+    .btn-cita {
+        padding: 7px 12px;
+        font-size: 0.75rem;
+    }
 
-/* Galería con imágenes */
-.galeria-imagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: var(--transicion);
-}
+    /* OCULTAR TEXTO "AGENDAR CITA" EN MÓVILES MUY PEQUEÑOS */
+    /* Deja solo el ícono de WhatsApp */
+    .btn-cita span,
+    .btn-cita:not(:has(i)) {
+        display: inline;
+    }
 
-.galeria-item:hover .galeria-imagen {
-    transform: scale(1.1);
-}
+    .seccion-encabezado h2 {
+        font-size: 1.5rem;
+    }
 
-/* Nosotros - ocultar logo-icono antiguo si aún existe */
-.logo-icono {
-    display: none;
-}
+    .pagina-hero h1 {
+        font-size: 1.7rem;
+    }
 
-/* Hero-card antiguo - ocultar si aún existe */
-.hero-card {
-    display: none;
+    .cta-texto h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-info-item i {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    .beneficio-item {
+        padding: 25px 15px;
+    }
+
+    .servicio-info {
+        padding: 20px;
+    }
 }
